@@ -2,7 +2,7 @@
 " Author : tamy0612 <tamura.yasumasa+github@gmail.com>
 " License: zlib License
 
-let s:is_win = g:quickrun#V.Prelude.is_windows()
+let s:is_win = has('win32') || has('win64')
 let s:runner = {
 \   'config': {
 \     'pty': 0,
